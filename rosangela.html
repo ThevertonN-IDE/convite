@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite Especial | Professora Rosângela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/rosangela.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <main class="container">
+    <div class="card">
+      <div class="tag-homenagem">Homenagem Especial</div>
+      
+      <!-- Substitua src pela imagem da caricatura dela -->
+      <div class="avatar-wrapper">
+        <img src="rosangela.png" alt="Caricatura Profa. Rosângela" class="avatar" onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Rosangela'">
+      </div>
+
+      <h1 class="titulo">Professora Rosângela</h1>
+      <p class="cargo-proposto">Nossa Futura Paraninfa</p>
+
+      <div class="texto-carta">
+        <p>Sua presença, carinho constante e apoio em cada desafio foram bússolas essenciais para que chegássemos até aqui com tanta força e confiança.</p>
+        <p>Por representar a madrinha ideal para celebrar essa grande vitória ao nosso lado, a turma inteira tem um pedido especial:</p>
+      </div>
+
+      <div class="pergunta-box">
+        <h2>Você aceita ser a Paraninfa da nossa turma?</h2>
+      </div>
+
+      <div class="botoes-container" id="areaBotoes">
+        <button id="btnSim" class="btn btn-aceitar">SIM, COM CERTEZA! 🥂</button>
+        <button id="btnNao" class="btn btn-recusar">Não</button>
+      </div>
+
+      <div id="mensagemSucesso" class="sucesso-box oculto">
+        <h3>✨ RECONHECIMENTO MAIS QUE MERECIDO! ✨</h3>
+        <p>Não poderíamos ter escolhido paraninfa melhor. Obrigado por estar sempre ao nosso lado!</p>
+        <p class="assinatura">Com todo amor e gratidão, seus eternos afilhados!</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

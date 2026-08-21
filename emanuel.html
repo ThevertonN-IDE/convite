@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite Especial | Professor Emanuel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/emanuel.css">
+  <!-- Biblioteca leve para efeito de confetes -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <main class="container">
+    <div class="card">
+      <div class="tag-homenagem">Homenagem Oficial</div>
+      
+      <!-- Substitua src pela imagem da caricatura dele -->
+      <div class="avatar-wrapper">
+        <img src="emanuel.png" alt="Caricatura Prof. Emanuel" class="avatar" onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Emanuel'">
+      </div>
+
+      <h1 class="titulo">Professor Emanuel</h1>
+      <p class="cargo-proposto">Nosso Futuro Patrono</p>
+
+      <div class="texto-carta">
+        <p>Ao longo da nossa caminhada, sua dedicação, paciência e paixão por ensinar foram pilares que nos inspiraram a ir além dos limites da sala de aula.</p>
+        <p>Por ser esse exemplo de liderança e acolhimento que marcou para sempre a nossa história acadêmica, temos uma pergunta inegociável:</p>
+      </div>
+
+      <div class="pergunta-box">
+        <h2>Você aceita ser o Patrono da nossa turma?</h2>
+      </div>
+
+      <div class="botoes-container" id="areaBotoes">
+        <button id="btnSim" class="btn btn-aceitar">SIM, COM CERTEZA! 🎓</button>
+        <button id="btnNao" class="btn btn-recusar">Não</button>
+      </div>
+
+      <!-- Card que aparece após clicar em Sim -->
+      <div id="mensagemSucesso" class="sucesso-box oculto">
+        <h3>🎉 RESPOSTA CORRETA! 🎉</h3>
+        <p>Sabíamos que não recusaria! É uma honra imensa ter você como nosso Patrono.</p>
+        <p class="assinatura">Com muito carinho e admiração, sua turma!</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
